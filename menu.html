@@ -158,6 +158,11 @@
                 color: #c8a97e;
                 font-size: 1.3rem;
             }
+
+            .img-productos:hover{
+                scale: 2;
+                transition: all 0.3s ease-in-out;
+            }
         </style>
     </head>
     <body>
@@ -221,28 +226,41 @@
                     <button class="btn active" data-filter="*">Todo</button>
                     <button class="btn" data-filter=".filter-carnes">
                         Carnes
+                    </button>                    
+                    <button class="btn" data-filter=".filter-pezcados">
+                        Pezcados
                     </button>
-                    <button class="btn" data-filter=".filter-sopas">
+                    <button class="btn" data-filter=".filter-bandejas">
+                        Bandejas
+                    </button>
+                    <!-- <button class="btn" data-filter=".filter-sopas">
                         Sopas
-                    </button>
+                    </button> -->
                     <button class="btn" data-filter=".filter-bebidas">
                         Bebidas
-                    </button>
-                    <button class="btn" data-filter=".filter-postres">
-                        Postres
                     </button>
                 </div>
 
                 <div class="row menu-container">
                     <div class="col-lg-6 menu-item-wrapper filter-carnes">
                         <div class="menu-item">
-                            <img
-                                src="https://placehold.co/80x80/c8a97e/ffffff?text=M"
-                                alt="Mamona"
-                            />
+                            <img src="assets/img/picadaMixta.png" alt="Picada" class="img-productos"/>
                             <div class="menu-content">
-                                <h5>Mamona a la Llanera (Porción)</h5>
-                                <p>Nuestra especialidad. Tierna y jugosa.</p>
+                                <h5>Carne mixta</h5>
+                                <p>
+                                    Mamona, chiguiro, costilla de cerdo, arepa boyacense, papa, yuca, guacamole y aji.
+                                </p>
+                            </div>
+                            <div class="menu-price">$65.000</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item-wrapper filter-carnes">
+                        <div class="menu-item">
+                            <img src="assets/img/pechugaAlaPlancha.png" alt="Pechuga a la plancha" class="img-productos"/>
+                            <div class="menu-content">
+                                <h5>Pechuga a la plancha</h5>
+                                <p>Deliciosa pechuga de pollo a la plancha, acompañada de arroz, papas a la francesa, ensalada, y aguacate.</p>
                             </div>
                             <div class="menu-price">$35.000</div>
                         </div>
@@ -250,48 +268,79 @@
 
                     <div class="col-lg-6 menu-item-wrapper filter-carnes">
                         <div class="menu-item">
-                            <img
-                                src="https://placehold.co/80x80/c8a97e/ffffff?text=P"
-                                alt="Picada"
-                            />
+                            <img src="assets/img/costillasBbq.png" alt="Costillas BBQ" class="img-productos"/>
                             <div class="menu-content">
-                                <h5>Picada "Brisas del Llano"</h5>
+                                <h5>Costillas BBQ</h5>
                                 <p>
-                                    Carne, pollo, chorizo, morcilla, yuca, papa.
+                                    Jugosas costillas de cerdo bañadas en salsa BBQ, acompañadas de papas a la francesa y ensalada.
                                 </p>
                             </div>
-                            <div class="menu-price">$65.000</div>
+                            <div class="menu-price">$35.000</div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-6 menu-item-wrapper filter-pezcados">
+                        <div class="menu-item">
+                            <img src="assets/img/mojarrafrita.png" alt="Mojarra frita" class="img-productos"/>
+                            <div class="menu-content">
+                                <h5>Mojarra frita</h5>
+                                <p>
+                                    Crujiente mojarra frita, acompañada de arroz, ensalada, papas a la francesa, yuca frita, aguacate y limón.
+                                </p>
+                            </div>
+                            <div class="menu-price">$20.000</div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 menu-item-wrapper filter-sopas">
+                    <div class="col-lg-6 menu-item-wrapper filter-pezcados">
                         <div class="menu-item">
-                            <img
-                                src="https://placehold.co/80x80/c8a97e/ffffff?text=S"
-                                alt="Sancocho"
-                            />
+                            <img src="assets/img/bagreSudado.png" alt="Bagre Sudado" class="img-productos"/>
                             <div class="menu-content">
-                                <h5>Sancocho de Gallina</h5>
-                                <p>Hecho en leña, con el sabor del campo.</p>
+                                <h5>Bagre Sudado</h5>
+                                <p>
+                                    Bagre sudado con arroz blanco, ensalada, papa sudada, yuca sudada y aguacate.
+                                </p>
                             </div>
-                            <div class="menu-price">$22.000</div>
+                            <div class="menu-price">$20.000</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 menu-item-wrapper filter-pezcados">
+                        <div class="menu-item">
+                            <img src="assets/img/mojarraSudada.png" alt="Mojarra Sudada" class="img-productos"/>
+                            <div class="menu-content">
+                                <h5>Mojarra Sudada</h5>
+                                <p>
+                                    Mojarra sudada con arroz blanco, ensalada, papa sudada, yuca sudada y aguacate.
+                                </p>
+                            </div>
+                            <div class="menu-price">$20.000</div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 menu-item-wrapper filter-carnes">
+                    <div class="col-lg-6 menu-item-wrapper filter-pezcados">
                         <div class="menu-item">
-                            <img
-                                src="https://placehold.co/80x80/c8a97e/ffffff?text=C"
-                                alt="Carne a la llanera"
-                            />
+                            <img src="assets/img/bagreFrito.png" alt="Bagre frito" class="img-productos"/>
                             <div class="menu-content">
-                                <h5>Carne a la Llanera</h5>
+                                <h5>Bagre frito</h5>
                                 <p>
-                                    Cortes selectos de res asados a la
-                                    perfección.
+                                    Fresco y crujiente bagre frito, acompañado de arroz, ensalada, papas a la francesa, yuca frita, aguacate y limón.
                                 </p>
                             </div>
-                            <div class="menu-price">$32.000</div>
+                            <div class="menu-price">$20.000</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item-wrapper filter-bandejas">
+                        <div class="menu-item">
+                            <img src="assets/img/bandejaPaisa.png" alt="Bandeja paisa" class="img-productos"/>
+                            <div class="menu-content">
+                                <h5>Bandeja paisa</h5>
+                                <p>
+                                    Frijoles, arroz, carne molida, chicharrón, huevo frito, arepa, plátano maduro y aguacate.
+                                </p>
+                            </div>
+                            <div class="menu-price">$20.000</div>
                         </div>
                     </div>
 
@@ -309,21 +358,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 menu-item-wrapper filter-postres">
-                        <div class="menu-item">
-                            <img
-                                src="https://placehold.co/80x80/c8a97e/ffffff?text=P"
-                                alt="Postre"
-                            />
-                            <div class="menu-content">
-                                <h5>Postre de la Casa</h5>
-                                <p>
-                                    Pregunta por nuestra dulce sorpresa del día.
-                                </p>
-                            </div>
-                            <div class="menu-price">$8.000</div>
-                        </div>
-                    </div>
+                    
 
                     <div class="col-lg-6 menu-item-wrapper filter-bebidas">
                         <div class="menu-item">
