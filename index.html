@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brisas del Llano - Restaurante</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brisas del <span>Llano</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#destacado">Destacado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#promociones">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    
+    <section id="hero" class="hero">
+        <video autoplay muted loop playsinline class="video-fondo">
+            <source src="assets/video/v2.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <div class="hero-content">
+            <h1>BRISAS DEL <span>LLANO</span></h1>
+            <p>El auténtico sabor de nuestra tierra en cada plato.</p>
+            <a href="menu.html" class="btn btn-main">Ver Menú</a>
+        </div>
+    </section>
+
+    <main id="main">
+        <!-- Producto Destacado -->
+        <section id="destacado" class="producto-destacado">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nuestro Plato Estrella</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <img src="assets/img/mesero1.png" class="img-fluid"
+                            alt="Plato destacado" />
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <h3>Picada Llanera</h3>
+                        <p class="fst-italic">
+                            La ternera más tierna, asada lentamente en vara
+                            con el toque secreto de la casa. Una experiencia
+                            que te transportará al corazón del llano.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fas fa-check-circle text-success"></i>
+                                Carne 100% certificada.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle text-success"></i>
+                                Cocción tradicional por más de 4 horas.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle text-success"></i>
+                                Acompañada de yuca, papa, arepa y nuestro guacamole
+                                casero.
+                            </li>
+                        </ul>
+                        <p>
+                            Cada bocado es un homenaje a nuestras raíces y
+                            tradiciones. Ven y descubre por qué este plato
+                            es el orgullo de nuestro restaurante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anuncio Especial -->
+        <section id="anuncio" class="anuncio-especial-container">
+            <div class="container">
+                <div class="anuncio-especial text-center">
+                    <h3>¡Celebra tu dia con Nosotros!</h3>
+                    <p class="my-4">
+                        Escribinos al WhatsApp para reservar tu mesa y
+                        disfrutar de un ambiente familiar y acogedor.
+                    </p>
+                    <p class="countdown" id="countdown-madre">
+                        Reserva, cupos limitados.
+                    </p>
+                    <a href="#contacto" class="btn btn-main mt-3">Reservar Mesa</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promociones -->
+        <section id="promociones" class="promociones">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Promociones del Mes</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card promo-card">
+                            <span class="badge">Jueves de Amigos</span>
+                            <img src="https://placehold.co/400x250/333333/ffffff?text=Picada+Llanera"
+                                class="card-img-top" alt="Promo 1" />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Picada Llanera + 4 Cervezas
+                                </h5>
+                                <p class="card-text">
+                                    Ideal para compartir. Chicharrón,
+                                    chorizo, morcilla, yuca y papa criolla.
+                                </p>
+                                <h4 class="text-end text-success fw-bold">
+                                    $65.000
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card promo-card">
+                            <span class="badge">Almuerzo Ejecutivo</span>
+                            <img src="https://placehold.co/400x250/555555/ffffff?text=Sopa+del+Día" class="card-img-top"
+                                alt="Promo 2" />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Sopa + Seco + Bebida
+                                </h5>
+                                <p class="card-text">
+                                    El sabor de casa todos los días.
+                                    Pregunta por el plato del día. Lunes a
+                                    Viernes.
+                                </p>
+                                <h4 class="text-end text-success fw-bold">
+                                    $18.000
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card promo-card">
+                            <span class="badge">Fin de Semana</span>
+                            <img src="https://placehold.co/400x250/777777/ffffff?text=Jarra+de+Refajo"
+                                class="card-img-top" alt="Promo 3" />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    2x1 en Jarra de Refajo
+                                </h5>
+                                <p class="card-text">
+                                    Acompaña tu almuerzo de fin de semana
+                                    con nuestro refrescante refajo de la
+                                    casa.
+                                </p>
+                                <h4 class="text-end text-success fw-bold">
+                                    Paga 1 Lleva 2
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comentarios -->
+        <section id="comentarios" class="comentarios bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Qué dicen nuestros clientes</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="testimonial-card">
+                            <img src="https://placehold.co/100x100/eeeeee/777777?text=Cliente+1" alt="Cliente 1" />
+                            <h4>Carlos Mendoza</h4>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic">
+                                "La mejor mamona que he probado en años. El
+                                ambiente es muy acogedor y el servicio de
+                                primera. ¡Volveré pronto!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="testimonial-card">
+                            <img src="https://placehold.co/100x100/eeeeee/777777?text=Cliente+2" alt="Cliente 2" />
+                            <h4>Ana Sofía Pérez</h4>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="fst-italic">
+                                "Un lugar perfecto para ir en familia. Las
+                                porciones son generosas y el sabor es
+                                auténtico. Recomiendo la picada."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="testimonial-card">
+                            <img src="https://placehold.co/100x100/eeeeee/777777?text=Cliente+3" alt="Cliente 3" />
+                            <h4>Javier Rodríguez</h4>
+                            <div class="stars mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic">
+                                "Pedí un domicilio y llegó caliente y a
+                                tiempo. La calidad de la comida es
+                                excelente, incluso para llevar. 100%
+                                recomendado."
+                            </p>
+                        </div>z
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-8">
+                        <h3 class="text-center mb-4">Déjanos tu opinión</h3>
+                        <form action="procesar_comentario.php" method="post" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Tu Nombre" required />
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Tu Email" required />
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Tu comentario..."
+                                    required></textarea>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-main">
+                                    Enviar Comentario
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto y Ubicación -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Visítanos o Pide a Domicilio</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="info-box mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Nuestra Dirección</h3>
+                            <p>Calle Falsa 123, Villavicencio, Meta</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="info-box mb-4">
+                            <i class="fas fa-clock"></i>
+                            <h3>Horarios de Atención</h3>
+                            <p>Lunes - Domingo<br />11:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="info-box mb-4">
+                            <i class="fas fa-motorcycle"></i>
+                            <h3>Domicilios</h3>
+                            <p>
+                                Llámanos o escríbenos<br />+57 300 123 4567
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.1066299539916!2d-74.12641128865035!3d4.574863042714792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98cccd095cad%3A0xdb2bb7b105015513!2sAsadero%20Brisas%20del%20Llano!5e0!3m2!1ses!2sco!4v1753981884082!5m2!1ses!2sco" 
+                            width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botones de contacto flotantes -->
+    <div class="floating-contact">
+        <a href="https://wa.me/573001234567?text=Hola,%20quisiera%20hacer%20un%20pedido."
+            class="btn-social btn-whatsapp" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="http://m.me/tu-usuario-de-facebook" class="btn-social btn-messenger" target="_blank" title="Messenger">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+        <a href="tel:+573001234567" class="btn-social btn-phone" title="Llamar">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Brisas del Llano</h3>
+            <p>El sabor que nos une, la tradición que nos inspira.</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright
+                <strong><span><a href="https://www.jcmonterodev.pw">J&M DevMente</a></span></strong>. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/app.js"></script>
+    
+</body>
+
+</html>
