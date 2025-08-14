@@ -330,6 +330,49 @@ section {
     font-weight: bold;
 }
 
+.comentarios-slider {
+    position: relative;
+    padding: 40px 60px; 
+}
+
+.comentarios-slider .swiper-button-next,
+.comentarios-slider .swiper-button-prev {
+    top: 50%;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    color: #333;
+    transition: all 0.3s ease;
+     
+}
+
+.comentarios-slider .swiper-button-next:hover,
+.comentarios-slider .swiper-button-prev:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.comentarios-slider .swiper-button-next {
+    right: 10px; /* Posición desde el borde derecho */
+}
+
+.comentarios-slider .swiper-button-prev {
+    left: 10px; /* Posición desde el borde izquierdo */
+}
+
+/* Hacer el ícono de la flecha más pequeño */
+.comentarios-slider .swiper-button-next:after,
+.comentarios-slider .swiper-button-prev:after {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.comentarios-slider .swiper-button-next:hover,
+.comentarios-slider .swiper-button-prev:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
 /* Contacto y Ubicación */
 .info-box {
     background: var(--blanco);
@@ -348,6 +391,8 @@ section {
 iframe {
     border-radius: 8px;
 }
+
+
 
 
 /*************** MENU ***************/
@@ -516,61 +561,6 @@ iframe {
     margin-top: 20px;
 }
 
-.comentarios-slider {
-    position: relative;
-    padding: 40px 60px; /* Espacio para las flechas */
-}
-
-.comentarios-slider .swiper-button-next,
-.comentarios-slider .swiper-button-prev {
-    top: 50%;
-    /* transform: translateY(-50%); */
-    width: 30px !important;
-    height: 30px !important;
-    /* background-color: rgba(255, 255, 255, 0.9); */
-    border-radius: 50%;
-    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-    color: #333;
-    transition: all 0.3s ease;
-     
-}
-
-.comentarios-slider .swiper-button-next:hover,
-.comentarios-slider .swiper-button-prev:hover {
-    background-color: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.comentarios-slider .swiper-button-next {
-    right: 10px; /* Posición desde el borde derecho */
-}
-
-.comentarios-slider .swiper-button-prev {
-    left: 10px; /* Posición desde el borde izquierdo */
-}
-
-/* Hacer el ícono de la flecha más pequeño */
-.comentarios-slider .swiper-button-next:after,
-.comentarios-slider .swiper-button-prev:after {
-    font-size: 18px !important;
-    font-weight: bold;
-}
-
-/* Estilo adicional para que se vean mejor */
-/* .comentarios-slider .swiper-button-next,
-.comentarios-slider .swiper-button-prev {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    color: #333;
-    transition: all 0.3s ease;
-} */
-
-.comentarios-slider .swiper-button-next:hover,
-.comentarios-slider .swiper-button-prev:hover {
-    background-color: #fff;
-    transform: scale(1.1);
-}
 
 /* Ajustes para móviles */
 @media (max-width: 768px) {

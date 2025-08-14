@@ -30,7 +30,7 @@ function listadoDeComentarios() {
             response.forEach(element => {
                 // Generar estrellas dinámicamente basándose en la puntuación
                 const estrellas = generarEstrellas(element.puntuacion_comentario);
-                
+                let fechaFormateada = fomateoFechas(element.fecha_comentario);
                 $("#comentarios-lista").append(`
                     <div class="swiper-slide">
                         <div class="testimonial-card">
@@ -41,6 +41,7 @@ function listadoDeComentarios() {
                             <p class="fst-italic">
                                 "${element.comentario_comentario}"
                             </p>
+                            <p class="fst-italic" style="font-size: 1.4rem;">${fechaFormateada}</p>
                         </div>
                     </div>
                 `);
@@ -53,6 +54,16 @@ function listadoDeComentarios() {
             console.error(error);
         }
     });
+}
+
+function fomateoFechas(fechaComentario) {
+
+    const fecha = new Date(fechaComentario);
+    // Formateamos con el idioma español
+    const opciones = { day: 'numeric', month: 'long', year: 'numeric' };
+    const fechaFormateada = fecha.toLocaleDateString('es-ES', opciones);
+
+    return fechaFormateada;
 }
 
 // Función para inicializar el slider de comentarios
