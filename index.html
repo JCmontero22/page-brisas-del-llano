@@ -17,6 +17,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
 
+    <!-- Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    
+    <!-- CSS de Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -203,62 +209,28 @@
                 <div class="section-title">
                     <h2>Qué dicen nuestros clientes</h2>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <div class="testimonial-card">
-                            <img src="https://placehold.co/100x100/eeeeee/777777?text=Cliente+1" alt="Cliente 1" />
-                            <h4>Carlos Mendoza</h4>
-                            <div class="stars mb-2">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p class="fst-italic">
-                                "La mejor mamona que he probado en años. El
-                                ambiente es muy acogedor y el servicio de
-                                primera. ¡Volveré pronto!"
-                            </p>
-                        </div>
+
+                <!-- Sección de comentarios con slider -->
+                <div class="comentarios-slider swiper">
+                    <div class="swiper-wrapper" id="comentarios-lista">
+                        <!-- Los comentarios se cargarán aquí dinámicamente -->
                     </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="testimonial-card">
-                            <img src="https://placehold.co/100x100/eeeeee/777777?text=Cliente+2" alt="Cliente 2" />
-                            <h4>Ana Sofía Pérez</h4>
-                            <div class="stars mb-2">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <p class="fst-italic">
-                                "Un lugar perfecto para ir en familia. Las
-                                porciones son generosas y el sabor es
-                                auténtico. Recomiendo la picada."
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="testimonial-card">
-                            <img src="https://placehold.co/100x100/eeeeee/777777?text=Cliente+3" alt="Cliente 3" />
-                            <h4>Javier Rodríguez</h4>
-                            <div class="stars mb-2">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p class="fst-italic">
-                                "Pedí un domicilio y llegó caliente y a
-                                tiempo. La calidad de la comida es
-                                excelente, incluso para llevar. 100%
-                                recomendado."
-                            </p>
-                        </div>z
-                    </div>
+                    
+                    <!-- Controles de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    
+                    <!-- Paginación -->
+                    <div class="swiper-pagination"></div>
                 </div>
 
                 <div class="row justify-content-center mt-5">
                     <div class="col-lg-8">
                         <h3 class="text-center mb-4">Déjanos tu opinión</h3>
-                        <form action="procesar_comentario.php" method="post" class="php-email-form">
+                        <form id="formularioComentarios" action="" method="post" class="php-email-form">
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
+                                    <input type="text" name="nombre" class="form-control" id="nombre"
                                         placeholder="Tu Nombre" required />
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
@@ -267,13 +239,27 @@
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Tu comentario..."
+                                <textarea class="form-control" name="comentario" rows="5" placeholder="Tu comentario..."
                                     required></textarea>
                             </div>
+
+                            <div class="rating">
+                                <input type="radio" id="estrella5" name="puntuacion" value="5">
+                                <label for="estrella5">★</label>
+                                <input type="radio" id="estrella4" name="puntuacion" value="4">
+                                <label for="estrella4">★</label>
+                                <input type="radio" id="estrella3" name="puntuacion" value="3">
+                                <label for="estrella3">★</label>
+                                <input type="radio" id="estrella2" name="puntuacion" value="2">
+                                <label for="estrella2">★</label>
+                                <input type="radio" id="estrella1" name="puntuacion" value="1">
+                                <label for="estrella1">★</label>
+                            </div>
+
+
+
                             <div class="text-center mt-3">
-                                <button type="submit" class="btn btn-main">
-                                    Enviar Comentario
-                                </button>
+                                <button type="submit" class="btn btn-main">Enviar Comentario</button>
                             </div>
                         </form>
                     </div>
@@ -359,6 +345,12 @@
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <!-- JS de Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
