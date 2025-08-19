@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brisas del Llano - Restaurante</title>
+    <title>Brisas del Llano G.Q - Restaurante</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -15,11 +15,13 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
 
     <!-- Toastr -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-    
+
     <!-- CSS de Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
@@ -31,7 +33,7 @@
     <!-- Header / Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Brisas del <span>Llano</span></a>
+            <a class="navbar-brand" href="#">Brisas del <span>Llano</span> G.Q</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,14 +61,14 @@
     </nav>
 
     <!-- Hero Section -->
-    
+
     <section id="hero" class="hero">
         <video autoplay muted loop playsinline class="video-fondo">
             <source src="assets/video/v2.mp4" type="video/mp4">
             Tu navegador no soporta el video.
         </video>
         <div class="hero-content">
-            <h1>BRISAS DEL <span>LLANO</span></h1>
+            <h1>BRISAS DEL <span>LLANO</span> G.Q</h1>
             <p>El auténtico sabor de nuestra tierra en cada plato.</p>
             <a href="menu.html" class="btn btn-main">Ver Menú</a>
         </div>
@@ -81,14 +83,12 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6 text-center">
-                        <img src="assets/img/mesero1.png" class="img-fluid"
-                            alt="Plato destacado" />
+                        <img src="assets/img/parrillero1.jpg" class="img-fluid" alt="Plato destacado" />
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <h3>Carne Mixta</h3>
                         <p class="fst-italic">
-                            La ternera más tierna, asada lentamente en vara
-                            con el toque secreto de la casa. Una experiencia
+                            La ternera más tierna, asada lentamente con el toque secreto de la casa. Una experiencia
                             que te transportará al corazón del llano.
                         </p>
                         <ul>
@@ -102,7 +102,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle text-success"></i>
-                                Acompañada de yuca, papa, arepa boyasence y nuestro guacamole
+                                Acompañada de yuca, papa, arepa boyacense y nuestro guacamole
                                 casero.
                             </li>
                         </ul>
@@ -119,27 +119,88 @@
         <!-- Anuncio Especial -->
         <section id="anuncio" class="anuncio-especial-container">
             <div class="container">
-                <div class="anuncio-especial text-center">
-                    <h3>¡Celebra tu dia con Nosotros!</h3>
-                    <p class="my-4">
-                        Escribinos al WhatsApp para reservar tu mesa y
-                        disfrutar de un ambiente familiar y acogedor.
-                    </p>
-                    <p class="countdown" id="countdown-madre">
-                        Reserva, cupos limitados.
-                    </p>
-                    <a href="#contacto" class="btn btn-main mt-3">Reservar Mesa</a>
+
+                <div class="section-title">
+                    <h2>Tus eventos con nosotros</h2>
                 </div>
+
+                <div class="video-container">
+                    <video autoplay muted loop playsinline class="video-fondo">
+                        <source src="assets/video/v4.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+
+                    <div class="anuncio-especial text-center">
+                        <h3>¡Celebra tus reuniones y eventos con Nosotros!</h3>
+                        <p class="my-4 texto-asuncio">
+                            Imagine su próxima gran reunión con el aroma y el sabor de la auténtica comida llanera. En
+                            Brisas del Llano G.Q, cocinamos con el corazón para que usted y sus invitados solo se preocupen por
+                            disfrutar
+                        </p>
+                        <p>Nos especializamos en eventos a partir de 150 platos.</p>
+                        <p class="countdown mt-3" id="countdown-madre">
+                            Reserva con nosotros.
+                        </p>
+                        <a href="#contacto" class="btn btn-main mt-5">Reservar</a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
         <!-- Promociones -->
         <section id="promociones" class="promociones">
+            
             <div class="container">
                 <div class="section-title">
-                    <h2>Promociones del Mes</h2>
+                    <h2>Nuestro Sitio</h2>
                 </div>
-                <div class="row">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/slider1.jpg" class="d-block w-100 imgSlider" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/slider2.jpg" class="d-block w-100 imgSlider" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/slider3.jpg" class="d-block w-100 imgSlider" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/img/slider4.jpg" class="d-block w-100 imgSlider" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/img/slider5.jpg" class="d-block w-100 imgSlider" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+                <!-- <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card promo-card">
                             <span class="badge">Jueves de Amigos</span>
@@ -199,7 +260,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+            </div>
             </div>
         </section>
 
@@ -215,11 +277,11 @@
                     <div class="swiper-wrapper" id="comentarios-lista">
                         <!-- Los comentarios se cargarán aquí dinámicamente -->
                     </div>
-                    
+
                     <!-- Controles de navegación -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    
+
                     <!-- Paginación -->
                     <div class="swiper-pagination"></div>
                 </div>
@@ -279,13 +341,16 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <h3>Nuestra Dirección</h3>
                             <p> Cra 19 #13, Bogotá </p>
+                            <h3>Telefono</h3>
+                            <p>315-643-38-52</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="info-box mb-4">
                             <i class="fas fa-clock"></i>
                             <h3>Horarios de Atención</h3>
-                            <p>Lunes - Domingo<br />11:00 AM - 10:00 PM</p>
+                            <p>Lunes - Viernes<br />11:00 AM - 05:30 PM</p>
+                            <p>Fines de semana y festivos<br />11:00 AM - 07:00 PM</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -300,7 +365,8 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.1066299539916!2d-74.12641128865035!3d4.574863042714792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98cccd095cad%3A0xdb2bb7b105015513!2sAsadero%20Brisas%20del%20Llano!5e0!3m2!1ses!2sco!4v1753981884082!5m2!1ses!2sco" 
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.1066299539916!2d-74.12641128865035!3d4.574863042714792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98cccd095cad%3A0xdb2bb7b105015513!2sAsadero%20Brisas%20del%20Llano!5e0!3m2!1ses!2sco!4v1753981884082!5m2!1ses!2sco"
                             width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -315,9 +381,9 @@
             class="btn-social btn-whatsapp" target="_blank" title="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="http://m.me/tu-usuario-de-facebook" class="btn-social btn-messenger" target="_blank" title="Messenger">
+        <!-- <a href="http://m.me/tu-usuario-de-facebook" class="btn-social btn-messenger" target="_blank" title="Messenger">
             <i class="fab fa-facebook-messenger"></i>
-        </a>
+        </a> -->
         <a href="tel:+573001234567" class="btn-social btn-phone" title="Llamar">
             <i class="fas fa-phone"></i>
         </a>
@@ -335,7 +401,8 @@
             </div>
             <div class="copyright">
                 &copy; Copyright
-                <strong><span><a href="https://www.jcmonterodev.pw">J&M DevMente</a></span></strong>. Todos los derechos reservados.
+                <strong><span><a href="https://www.jcmonterodev.pw">J&M DevMente</a></span></strong>. Todos los derechos
+                reservados.
             </div>
         </div>
     </footer>
@@ -354,7 +421,7 @@
 
     <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
-    
+
 </body>
 
 </html>

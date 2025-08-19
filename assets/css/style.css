@@ -76,6 +76,8 @@ h6 {
     color: var(--text-color);
 }
 
+
+
 .section-title {
     text-align: center;
     padding-bottom: 30px;
@@ -236,22 +238,33 @@ section {
     margin-bottom: 1rem;
 }
 /* Anuncios Especiales */
+
+.anuncio-especial-container .video-container{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    z-index: 0.9;
+    
+}
+
 .anuncio-especial {
-    background:
+    /* background:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop")
-            center center;
+            center center; */
     background-size: cover;
     color: var(--blanco);
     padding: 80px 0;
     border-radius: 15px;
+    
 }
 .anuncio-especial h3 {
     color: var(--blanco);
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .anuncio-especial p {
-    font-size: 1.1rem;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.6rem;
 }
 .anuncio-especial .countdown {
     font-size: 2rem;
@@ -260,6 +273,32 @@ section {
 }
 
 /* Promociones */
+
+/* .promociones{
+    width: 50%;
+    margin: 0 auto;
+} */
+
+/* .carousel-item{
+    width: 100%;
+    height: 50vh;
+} */
+
+
+.carousel-inner,
+.carousel-item {
+    height: 700px;
+    min-height: 700px;
+    max-height: 700px;
+}
+
+.imgSlider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .promo-card {
     border: none;
     border-radius: 10px;
@@ -380,10 +419,10 @@ section {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 0 20px var(--negro);
-    height: 80%;
+    height: 90%;
 }
 .info-box i {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--link-color);
     margin-bottom: 15px;
 }
@@ -583,3 +622,29 @@ iframe {
     }
 }
 
+
+/***********************************************************
+
+        ************ MEDIAQUERYS **********
+
+************************************************************/   
+ @media screen and (max-width: 768px){
+     /*  */
+
+    .carousel-inner,
+    .carousel-item {
+        height: 400px;
+        min-height: 400px;
+        max-height: 400px;
+    }
+
+    .anuncio-especial h3 {
+        color: var(--blanco);
+        font-size: 2.5rem;
+    }
+    .anuncio-especial p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+ }
