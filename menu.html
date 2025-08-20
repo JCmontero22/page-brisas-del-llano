@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
 
 <body>
@@ -41,10 +42,10 @@
                         <a class="nav-link active" href="menu.html">Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#promociones">Promociones</a>
+                        <a class="nav-link" href="index.html#promociones">Fotos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        <a class="nav-link" href="index.html#contacto">Ubicación</a>
                     </li>
                 </ul>
             </div>
@@ -76,15 +77,16 @@
                 <!-- <button class="btn" data-filter=".filter-sopas">
                         Sopas
                     </button> -->
-                <button class="btn" data-filter=".filter-bebidas">
-                    Bebidas
+                <button class="btn" data-filter=".filter-sopas">
+                    Sopas
                 </button>
             </div>
 
+            <!-- CARNES -->
             <div class="row menu-container">
                 <div class="col-lg-6 menu-item-wrapper filter-carnes">
                     <div class="menu-item">
-                        <img src="assets/img/picadaMixta.png" alt="Picada" class="img-productos" />
+                        <img src="assets/img/picada.jpg" alt="Picada" class="img-productos" />
                         <div>
                             <div class="menu-content">
                                 <h5>Carne mixta</h5>
@@ -92,7 +94,7 @@
                                     Mamona, chigüiro, costilla de cerdo, arepa boyacense, papa, yuca, guacamole y ají.
                                 </p>
                             </div>
-                            <div class="menu-price">$65.000</div>
+                            <div class="menu-price">Desde $40.000</div>
                         </div>
 
                     </div>
@@ -100,7 +102,7 @@
 
                 <div class="col-lg-6 menu-item-wrapper filter-carnes">
                     <div class="menu-item">
-                        <img src="assets/img/pechugaAlaPlancha.png" alt="Pechuga a la plancha" class="img-productos" />
+                        <img src="assets/img/pechuga.jpg" alt="Pechuga a la plancha" class="img-productos" />
 
                         <div>
                             <div class="menu-content">
@@ -124,14 +126,30 @@
                                     y ensalada.
                                 </p>
                             </div>
-                            <div class="menu-price">$35.000</div>
+                            <div class="menu-price">$40.000</div>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-lg-6 menu-item-wrapper filter-carnes">
+                    <div class="menu-item">
+                        <img src="assets/img/chicharron.png" alt="Porcion de chicharrón" class="img-productos" />
+                        <div>
+                            <div class="menu-content">
+                                <h5>Porcion de chicharrón</h5>
+                                <p>
+                                    Crocante porciones de chicharrón.
+                                </p>
+                            </div>
+                            <div class="menu-price">$40.000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PESCADOS -->
                 <div class="col-lg-6 menu-item-wrapper filter-pescados">
                     <div class="menu-item">
-                        <img src="assets/img/mojarrafrita.png" alt="Mojarra frita" class="img-productos" />
+                        <img src="assets/img/mojarra_frita.jpg" alt="Mojarra frita" class="img-productos" />
                         <div>
                             <div class="menu-content">
                                 <h5>Mojarra frita</h5>
@@ -155,7 +173,7 @@
                                     Bagre sudado con arroz blanco, ensalada, papa sudada, yuca sudada y aguacate.
                                 </p>
                             </div>
-                            <div class="menu-price">$20.000</div>
+                            <div class="menu-price">$30.000</div>
                         </div>
                     </div>
                 </div>
@@ -177,7 +195,7 @@
 
                 <div class="col-lg-6 menu-item-wrapper filter-pescados">
                     <div class="menu-item">
-                        <img src="assets/img/bagreFrito.png" alt="Bagre frito" class="img-productos" />
+                        <img src="assets/img/bagre_frito.jpg" alt="Bagre frito" class="img-productos" />
                         <div>
                             <div class="menu-content">
                                 <h5>Bagre frito</h5>
@@ -191,9 +209,10 @@
                     </div>
                 </div>
 
+                <!-- Bandeja -->
                 <div class="col-lg-6 menu-item-wrapper filter-bandejas">
                     <div class="menu-item">
-                        <img src="assets/img/bandejaPaisa.png" alt="Bandeja paisa" class="img-productos" />
+                        <img src="assets/img/bandeja_paisa.jpg" alt="Bandeja paisa" class="img-productos" />
                         <div>
                             <div class="menu-content">
                                 <h5>Bandeja paisa</h5>
@@ -202,38 +221,40 @@
                                     aguacate.
                                 </p>
                             </div>
-                            <div class="menu-price">$20.000</div>
+                            <div class="menu-price">$35.000</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 menu-item-wrapper filter-bebidas">
+                <!-- SOPAS -->
+                <div class="col-lg-6 menu-item-wrapper filter-sopas">
                     <div class="menu-item">
-                        <img src="https://placehold.co/80x80/c8a97e/ffffff?text=R" alt="Refajo" />
+                        <img src="assets/img/mondongo.jpg" alt="Mondongo" />
                         <div>
                             <div class="menu-content">
-                                <h5>Jarra de Refajo</h5>
-                                <p>La combinación perfecta para tu asado.</p>
+                                <h5>Sopa especial mondongo</h5>
+                                <p>Delisiosa sopa de mondongo, acompañada de arroz aguacate y ensalada</p>
                             </div>
-                            <div class="menu-price">$20.000</div>
+                            <div class="menu-price">$25.000</div>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="col-lg-6 menu-item-wrapper filter-bebidas">
+                <div class="col-lg-6 menu-item-wrapper filter-sopas">
                     <div class="menu-item">
-                        <img src="https://placehold.co/80x80/c8a97e/ffffff?text=L" alt="Limonada" />
+                        <img src="assets/img/ajiaco.jpg" alt="Ajiaco" />
                         <div>
                             <div class="menu-content">
-                                <h5>Limonada de Panela</h5>
-                                <p>Refrescante y tradicional.</p>
+                                <h5>Sopa especial ajiaco</h5>
+                                <p>Ajiaco, acompañada de pierna pernil, arroz, aguacate y arepa</p>
                             </div>
-                            <div class="menu-price">$7.000</div>
+                            <div class="menu-price">$25.000</div>
                         </div>
                     </div>
                 </div>
+
+
+                
             </div>
         </div>
     </section>
