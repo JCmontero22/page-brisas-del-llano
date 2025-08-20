@@ -439,8 +439,9 @@ iframe {
     padding: 160px 0 80px 0;
     background:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../img/banerMenu2.jpg") center center;
-    background-size: cover;
+        url("../img/portada_menu.png") center center;
+    background-size: auto;
+    
     text-align: center;
     color: #fff;
 }
