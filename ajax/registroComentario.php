@@ -11,7 +11,8 @@
         
         $bd = new conexion();
         $parametros['fecha'] = date('Y-m-d H:i:s');
-        $query = "INSERT INTO comentarios (nombre_usuario_comentario, comentario_comentario, puntuacion_comentario, fecha_comentario) VALUES ('$parametros[nombre]', '$parametros[comentario]', '$parametros[puntuacion]', '$parametros[fecha]')";
+        /* $query = "INSERT INTO comentarios (nombre_usuario_comentario, comentario_comentario, puntuacion_comentario, fecha_comentario) VALUES ('$parametros[nombre]', '$parametros[comentario]', '$parametros[puntuacion]', '$parametros[fecha]')"; */
+        $query = "INSERT INTO comentarios_brisas_del_llano (nombre_usuario_comentario, comentario_comentario, puntuacion_comentario, fecha_comentario) VALUES ('$parametros[nombre]', '$parametros[comentario]', '$parametros[puntuacion]', '$parametros[fecha]')";
 
         $resultado = $bd->execute($query);
 
