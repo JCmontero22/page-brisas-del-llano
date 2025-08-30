@@ -22,7 +22,7 @@ function scroll() {
 function listadoDeComentarios() {
     $("#comentarios-lista").empty();
     $.ajax({
-        url: "ajax/listadoComentario.php",
+        url: "../../ajax/listadoComentario.php",
         type: "GET",
         success: function (response) {
             response = JSON.parse(response);
