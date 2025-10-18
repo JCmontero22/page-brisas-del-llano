@@ -663,4 +663,12 @@ iframe {
         margin: 0 auto;
         font-size: 1.2rem;
     }
+
+    .entradaPrincipal{
+        padding: 0 3rem;
+    }
+
+    .entradaPrincipal p,ul{
+        text-align: justify;
+    }
  }
